@@ -1,0 +1,24 @@
+body {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+span {
+  font-style: 20px;
+}
+
+div {
+  font-style: 30px;
+}
+
+@media (max-width: 767px) {
+  span {
+    font-style: 15px;
+  }
+
+  div {
+    font-style: 25px;
+  }
+}

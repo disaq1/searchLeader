@@ -1,4 +1,6 @@
+const autoPrefixer = require('gulp-autoprefixer');
 const fileinclude = require('gulp-file-include');
+const rename = require('gulp-rename');
 
 let project_folder = "dist";
 let sourse_folder = "#src";
@@ -31,7 +33,12 @@ let { src, dest } = require('gulp'),
     gulp = require('gulp'),
     browsersync = require("browser-sync").create();
     file_include = require('gulp-file-include'),
-    del = require('del');
+    del = require('del'),
+    scss = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    group_media = require('gulp-group-css-media-queries'),
+    clean_css = require('gulp-clean-css'),
+    reName = require('gulp-rename');
 
 function browserSync(params) {
     browsersync.init({
@@ -52,21 +59,44 @@ function html() {
 
 function css() {
     return src(path.src.css)
+        .pipe(
+            scss({
+                outputStyle: "expanded"
+            })
+        )
+        .pipe(
+            group_media()
+        )
+        .pipe(
+            autoprefixer({
+                overrideBrowserslist: ['last 5 versions'],
+                cascade: true
+            })
+        )
+        .pipe(dest(path.build.css))
+        .pipe(clean_css())
+        .pipe(
+            reName({
+                extname: ".min.css"
+            })
+        )
         .pipe(dest(path.build.css))
         .pipe(browsersync.stream()) 
 }
 
 function wacthFiles(params) {
     gulp.watch([path.watch.html], html);
+    gulp.watch([path.watch.css], css);
 }
 
 function clean(params) {
     return del(path.clean);
 }
 
-let build = gulp.series(clean, html);
+let build = gulp.series(clean, gulp.parallel(css, html));
 let watch = gulp.parallel(build, wacthFiles, browserSync);
 
+exports.css = css;
 exports.html = html;
 exports.build = build;
 exports.watch = watch;
