@@ -1,0 +1,26 @@
+.header {
+    padding: 37px 315px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart__text {
+    margin: 0 4px;
+}
+
+.cart__num {
+    background-image: url(../img/Ellipse.svg);
+    width: 21px;
+    height: 21px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
