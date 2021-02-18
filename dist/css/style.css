@@ -1,58 +1,77 @@
 .header {
-  padding: 37px 315px;
-  text-align: center;
+  background-color: #793212;
+  grid-area: "header";
+  display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  grid-template: 1fr/1fr minmax(auto, 220px) minmax(auto, 950px) 1fr;
+}
+
+.header__logo {
+  grid-column: 2 / 3;
 }
 
 .header__cart {
+  grid-column: 3 / 4;
+  justify-self: flex-end;
+}
+
+.cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.cart__text {
-  margin: 0 4px;
-}
-
-.cart__num {
-  background-image: url(../img/Ellipse.svg);
-  width: 21px;
-  height: 21px;
   color: #fff;
-  border-radius: 50%;
+}
+
+.main {
+  grid-area: "main";
+  margin: 20px 35px;
+  display: grid;
+  grid-template: 1fr/1fr minmax(1170px, auto) 1fr;
+}
+
+.content {
+  grid-column: 2 / 3;
+}
+
+.content__title {
   text-align: center;
 }
 
-.h1__title {
-  text-align: center;
+.products__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 40px;
 }
 
-body {
-  padding: 0;
-  margin: 0;
+.products__item {
+  width: 270px;
+  height: 380px;
+  border: 1px solid #dedede;
 }
 
-h1 {
-  font-style: 30px;
+.footer {
+  background-color: #77608d;
+  grid-area: "footer";
+  display: grid;
+  grid-template: 1fr/1fr minmax(1170px, auto) 1fr;
 }
 
-h2 {
-  font-size: 26px;
+.footer__copy {
+  grid-column: 2 / 3;
 }
 
-p {
-  font-size: 16px;
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template: minmax(37px, auto) 1fr minmax(70px, auto)/1fr;
+  grid-template-areas: "header" "main" "footer";
 }
