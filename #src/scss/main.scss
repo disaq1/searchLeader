@@ -1,0 +1,76 @@
+.main {
+    grid-area: "main";
+    margin: 20px 35px;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(1170px, auto) 1fr;
+}
+
+.content {
+    grid-column: 2 / 3;
+}
+
+.content__title {
+    text-align: center;
+}
+
+.products__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 40px;
+}
+
+.products__item {
+    width: 270px;
+    height: 380px;
+    border: 1px solid #dedede;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .grid__body {
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     grid-template-rows: repeat(4, 1fr);
+//     margin: 0 315px;  // Оч спорно, надо будет править
+//     gap: 30px 40px;
+//     align-items: stretch;
+// }
+
+// .grid__item {
+//     border: 1px solid #DEDEDE;
+//     text-align: center;
+//     width: 270px;
+//     height: 380px;
+    
+// }
