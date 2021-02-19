@@ -1,9 +1,8 @@
 .header {
-    background-color: #793212;
-    grid-area: "header";
     display: grid;
     align-items: center;
     grid-template: 1fr / 1fr minmax(auto, 220px) minmax(auto, 950px) 1fr;
+    padding: 37px 0 0 0;
 }
 
 .header__logo {
@@ -18,10 +17,34 @@
 .cart {
     display: flex;
     align-items: center;
-    color: #fff;
 }
 
+.cart__text:hover {
+    color: #00A82D;
+}
 
+.cart__text {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 10px;
+    color: #000000;
+    transition: .1s;
+}
+
+.cart__num {
+    font-size: 12px;
+    font-weight: 600;
+    background: #00A82D;
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 
 
 
