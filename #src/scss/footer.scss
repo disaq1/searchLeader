@@ -1,10 +1,9 @@
 .footer {
-    background-color: #77608d;
-    grid-area: "footer";
     display: grid;
     grid-template: 1fr / 1fr minmax(1170px, auto) 1fr;
+    margin: 70px 0 0 0;
 }
 
-.footer__copy {
+.footer__cory {
     grid-column: 2 / 3;
 }
