@@ -1,5 +1,4 @@
 .main {
-    grid-area: "main";
     margin: 20px 35px;
     display: grid;
     grid-template: 1fr / 1fr minmax(1170px, auto) 1fr;
@@ -11,6 +10,8 @@
 
 .content__title {
     text-align: center;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .products__items {
@@ -22,55 +23,65 @@
 }
 
 .products__item {
+    box-sizing: border-box;
     width: 270px;
     height: 380px;
     border: 1px solid #dedede;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 230px 60px 53px;
+    align-items: start;
+}
+
+.products__image img {
+    position: relative;
+}
+
+.products__name {
+    margin: 0 36px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.products__price {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.products__button {
+    opacity: 0;
+    text-decoration: none;
+    // margin-bottom: 40px;  Надо бы переправить....
+    color: #ffffff;
+    border: 1px solid #296DC1;
+    background: #296DC1;
+    width: 186px;
+    align-items: center;
+
+    margin-left: 15%;
+    margin-bottom: 40px;
+    padding: 10px 12px 9px 12px;
+}
+
+.products__item:hover {
+    display: grid;
+    grid-template-rows: 218px 50px 53px 50px;
+    align-items: start;
+}
+
+.products__item:hover .products__button {
+    opacity: 1;
+    cursor: pointer;
+    transition: .7s;
 }
 
 
+// Анимация для "В корзине"
 
+.inCart{
+    color: #ffffff;
+    border: 1px solid #00A82D;
+    background: #00A82D;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .grid__body {
-//     display: grid;
-//     grid-template-columns: repeat(4, 1fr);
-//     grid-template-rows: repeat(4, 1fr);
-//     margin: 0 315px;  // Оч спорно, надо будет править
-//     gap: 30px 40px;
-//     align-items: stretch;
-// }
-
-// .grid__item {
-//     border: 1px solid #DEDEDE;
-//     text-align: center;
-//     width: 270px;
-//     height: 380px;
-    
-// }
