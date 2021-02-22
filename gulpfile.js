@@ -4,7 +4,7 @@ const imagemin = require('gulp-imagemin');
 const rename = require('gulp-rename');
 const svgSprite = require('gulp-svg-sprite');
 
-let project_folder = "dist";
+let project_folder = "docs";
 let sourse_folder = "#src";
 
 let fs = require('fs');

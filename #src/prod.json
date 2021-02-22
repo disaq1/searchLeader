@@ -1,0 +1,98 @@
+﻿{
+    "11101": {
+        "name": "Увлажнитель воздуха STARWIND",
+        "cost": 1650,
+        "description": "Увлажнитель воздуха STARWIND SHC1322, 3л, белый",
+        "image": "img/STARWIND-SHC1322.svg"
+    },
+    "11102": {
+        "name": "Триммер PHILIPS",
+        "cost": 2290,
+        "description": "Триммер PHILIPS HC3521/15 серебристый/черный",
+        "image": "img/PHILIPS-HC3521.svg"
+    },
+    "11103": {
+        "name": "Фитнес-трекер HONOR(розовый)",
+        "cost": 2390,
+        "description": "Фитнес-трекер HONOR Band 5 CRS-B19S, 0.95,розовый",
+        "image": "img/HONOR-band5.svg"
+    },
+    "11104": {
+        "name": "Мышь A4TECH",
+        "cost": 960,
+        "description": "Мышь A4TECH Bloody V3, игровая, оптическая, проводная, USB, черный",
+        "image": "img/A4TECH-bloody-V3.svg"
+    },
+    "11105": {
+        "name": "Фитнес-трекер HONOR(черный)",
+        "cost": 960,
+        "description": "Фитнес-трекер HONOR Band 5 CRS-B19S, 0.95, черный",
+        "image": "img/HONOV-band5-black.svg"
+    },
+    "11106": {
+        "name": "Пылесос SINBO",
+        "cost": 5670,
+        "description": "Пылесос SINBO SVC 3497, 2500Вт, синий/серый",
+        "image": "img/SINBO-svc.svg"
+    },
+    "11107": {
+        "name": "Планшет DIGMA",
+        "cost": 9490,
+        "description": "Планшет DIGMA Optima 7 Z800 Android 10.0 серебристый",
+        "image": "img/DIGMA.svg"
+    },
+    "11108": {
+        "name": "Игроаой монитор ACER",
+        "cost": 16800,
+        "description": "Монитор игровой ACER Nitro RG241YPbiipx 23.8 черный",
+        "image": "img/ACER.svg"
+    },
+    "11109": {
+        "name": "Экшн-камера DIGMA",
+        "cost": 2290,
+        "description": "Экшн-камера DIGMA DiCam 310 4K, WiFi, черный",
+        "image": "img/DIGMA-DiCam.svg"
+    },
+    "11110": {
+        "name": "Умная колонка ЯНДЕКС",
+        "cost": 5670,
+        "description": "Умная колонка ЯНДЕКС c голосовым помощником Алисой, серебристый",
+        "image": "img/Yandex.svg"
+    },
+    "11111": {
+        "name": "Квадрокоптер DJI",
+        "cost": 60990,
+        "description": "Квадрокоптер DJI Mini 2 MT2PD Fly More Combo с камерой, серый",
+        "image": "img/DJI-Mini2.svg"
+    },
+    "11112": {
+        "name": "Шлем виртуальной реальности HTC",
+        "cost": 11960,
+        "description": "Шлем виртуальной реальности HTC Vive PRO Eye EEA, черный/синий",
+        "image": "img/HTC-Vive_PRO.svg"
+    },
+    "11113": {
+        "name": "МФУ лазерный CANON",
+        "cost": 35310,
+        "description": "МФУ лазерный CANON i-Sensys MF445dw, A4, лазерный, черный",
+        "image": "img/CANON.svg"
+    },
+    "11114": {
+        "name": "Смарт-часы AMAZFIT",
+        "cost": 4490,
+        "description": "Смарт-часы AMAZFIT Bip U, 1.43, зеленый / зеленый",
+        "image": "img/AMAZFIT.svg"
+    },
+    "11115": {
+        "name": "Кофемашина PHILIPS",
+        "cost": 29990,
+        "description": "Кофемашина PHILIPS EP1224/00, серый/черный",
+        "image": "img/PHILIPS-EP1224.svg"
+    },
+    "11116": {
+        "name": "Гироскутер MIZAR",
+        "cost": 12990,
+        "description": "Гироскутер MIZAR MZ10,5CN, 10.5, карбон",
+        "image": "img/MIZAR.svg"
+    }
+}
