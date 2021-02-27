@@ -32,6 +32,11 @@
 }
 
 .cart__num {
+    transform: translate(-1000%, -1000%);
+}
+
+.cart__num-on {
+    transform: translate(0, 0);    
     font-size: 12px;
     font-weight: 600;
     background: #00A82D;
@@ -43,53 +48,73 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 1250px) {
+    .header {
+        display: grid;
+        align-items: center;
+        grid-template: 1fr / 1fr minmax(auto, 215px) minmax(auto, 705px) 1fr;
+        padding: 37px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        display: grid;
+        align-items: center;
+        grid-template: 1fr / 0.25fr 235px 595px 1fr;
+        padding: 24px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .header {
+        display: grid;
+        align-items: center;
+        grid-template: 1fr / 0.5fr minmax(auto, 215px) minmax(auto, 655px) 1.5fr;
+        padding: 24px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .header {
+        display: grid;
+        align-items: center;
+        grid-template: 1fr / minmax(auto, 130px) 215px minmax(350px, auto) 1fr;
+        padding: 24px 0 0 0;
+    }
+    .cart__text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .header {
+        display: grid;
+        align-items: center;
+        grid-template: 1fr / 0.5fr 1fr 1.5fr 1fr;
+        padding: 24px 0 0 0;
+    }
 
 }
 
+@media screen and (max-width: 910px) {
+    .header {
+        display: grid;
+        align-items: center;
+        grid-template: 1fr / 0.5fr 1fr 1.5fr 1fr;
+        padding: 24px 0 0 0;
+    }
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .header {
-//     padding: 37px 315px;
-//     text-align: center;
-//     align-items: center;
-//     align-content: center;
-//     display: flex;
-//     justify-content: space-between;
-// }
-
-// .header__cart {
-//     display: flex;
-//     align-items: center;
-// }
-
-// .cart__text {
-//     margin: 0 4px;
-// }
-
-// .cart__num {
-//     background-image: url(../img/Ellipse.svg);
-//     width: 21px;
-//     height: 21px;
-//     color: #fff;
-//     border-radius: 50%;
-//     text-align: center;
-// }
+@media screen and (max-width: 690px) {
+    .header {
+        display: grid;
+        align-items: start;
+        grid-template: 1fr / 0.1fr 0.3fr 1.7fr 0.1fr;
+        padding: 24px 0 0 0;
+    }
+    
+}
