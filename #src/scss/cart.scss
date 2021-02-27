@@ -1,0 +1,89 @@
+.wrap {
+    background: #F2F5F9;
+    min-height: 100%;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(1170px, auto) 1fr;
+}
+
+.wrap__form {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template: 1fr / 1fr 430px 1fr;
+}
+
+.form {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form__item {
+    margin-bottom: 30px;
+    height: 60px;
+    padding-left: 26px;
+    &:last-child {
+        padding-left: 0;
+    }
+}
+
+.form__title {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+// Стили для задизейбленной кнопки 
+.form-button {
+    background-color: rgba(41, 109, 193, 0.4);
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.form-btn {
+    background-color: #296DC1;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+
+// Модальное окно
+
+.modal-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color: #282828, $alpha: 0.4);
+    display: none;
+}
+
+
+.modal {
+    padding: 17px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 511px;
+    height: 230px;
+    background-color: #fff;
+}
+
+.popup {
+    display: block;
+}
+
+.modal-close-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-btn {
+    cursor: pointer;
+    align-items: center;
+    background-color: white;
+    border: none;
+}
